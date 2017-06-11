@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bootstrap Basics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrapstyle.css" />
+
+
+
+</head>
+
+<body>
+   <!--Navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+	       
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+		
+			<a href="#" class="navbar-brand text-muted">PBCS</a>
+			
+		<div class="collapse navbar-collapse">   
+         <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          
+			 <li class="dropdown">
+       <a data-toggle="dropdown" data-target="#">About PBCS<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                <li><a href="#">Dropdown List Item 1</a></li>
+                <li><a href="#">Dropdown List Item 2</a></li>
+                <li><a href="#">Dropdown List Item 3</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Plan</a></li>
+              </ul>
+         </li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+		</div>	
+    </div>
+    <!--End Navbar-->
+    
+    <!-- ************************************************************* -->
+    <!--Carousel-->
+    <div id="myCarousel" class="carousel slide jumbotron">
+        <div id="container">
+          <ol class="carousel-indicators">
+              <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+                  <div class="item active"> <!--first item in the carousal -->
+                      <h1>HELLO PBCS!</h1>
+                      <p class="lead">Learn how to build this fun little app!</p>
+                      <p class="btn-group">
+                        <a class="btn btn-lg btn-success" href="#">Download the app</a>
+                        <a class="btn btn-lg btn-default hidden-xs" href="#" >Text me the link</a>
+                      </p> 
+                  </div>    
+                  <div class="item">
+                      <h1>iOS</h1>
+                      <p class="lead">Learn how to build it for iOS</p>
+                      <p class="btn-group">
+                        <a class="btn btn-lg btn-success" href="#">Get started today</a>
+                      </p> 
+                  </div>
+                  <div class="item">
+                      <h1>Android</h1>
+                      <p class="lead">Learn how to build it for Android</p>
+                      <p class="btn-group">
+                        <a  class="btn btn-lg btn-success" href="#">Get started today</a>
+                      </p>               
+                  </div>
+           </div> <!--end of inner carousal -->
+        </div> <!--end of container -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
+    </div>
+    <!--End Carousel-->
+    <!-- ************************************************************* -->
+    
+    
+   <div class="container">   
+
+    <div class="row">
+        <div class="col-sm-4">
+			<b class="glyphicon glyphicon-camera"></b>
+          <h2>Delete photo &amp; video based on a timer</h2>
+          <p>Learn how to write the code that downloads and displays messages, photos, and videos that timeout after a few seconds. Then create the code that deletes them from the back-end to make them "self destruct."</p>
+        </div>
+
+        <div class="col-sm-4">
+         <b class="glyphicon glyphicon-user"></b>
+          <h2>Build an easily managed friends list</h2>
+          <p>Learn what Parse.com offers as a "backend-as-a-service" platform. Explore the user account management APIs provided by Parse.com and write the code to create and save a new user in a Parse.com data store.</p>
+       </div>
+
+        <div class="col-sm-4">
+         <b class="glyphicon glyphicon-cloud"></b>
+          <h2>Store &amp; retrieve data using cloud servers</h2>
+          <p>We'll teach you how to upload images, video files, and messages to Parse.com's cloud servers. Then learn how to retrieve the data by setting up custom queries that download and display them in the app.</p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-sm-6 hidden-xs">
+          <h3>Learn how to make this app</h3>
+          <p>We will build on the concepts learned in previous iOS projects to create an app that will allow users to send photo or video messages to other users that will be deleted once viewed.</p>
+            
+             <div class="row">
+            <div class="col-sm-6 col-md-push-6">
+              <img class="img-responsive" src="images/thumb.jpg">
+            </div>
+            <div class="col-sm-6 col-md-pull-6">
+              <p>Get access to these courses for only $24 a month!</p>
+              <a href="#">Visit Treehouse Now &raquo;</a>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="col-sm-6">
+          <h3>About PBCS</h3>
+          <p>PBCS provides an extensive library courses and training exercises that will give you a wide range of in-demand technology skills that will help you land your next dream job.</p>
+          <a href="#">Register at PBCS &raquo;</a>
+        </div>
+      </div>
+
+      <hr>
+      <div>
+        <p>&copy; 2017 PBCS</p>
+      </div>
+	</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
